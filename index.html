@@ -587,6 +587,54 @@
       .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
       .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 
+      .pillar-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .pillar-card {
+        background: rgba(255,255,255,0.18);
+        border: 1px solid rgba(255,255,255,0.28);
+        border-radius: 22px;
+        padding: 22px 18px;
+        position: relative;
+        overflow: hidden;
+        min-height: 280px;
+      }
+
+      .pillar-card::before {
+        content: "";
+        position: absolute;
+        inset: auto auto 0 0;
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(90deg, rgba(255,255,255,0.7), rgba(255,255,255,0.12));
+      }
+
+      .pillar-icon {
+        width: 68px;
+        height: 68px;
+        border-radius: 18px;
+        display: grid;
+        place-items: center;
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 12px;
+        color: #123a1b;
+        background: rgba(255,255,255,0.35);
+      }
+
+      .quote-block {
+        background: rgba(19, 58, 27, 0.12);
+        border-left: 4px solid rgba(24, 75, 38, 0.7);
+        border-radius: 14px;
+        padding: 14px 16px;
+        font-weight: 700;
+        font-style: italic;
+        color: #163221;
+      }
+
       .mini-title {
         font-size: 1.4rem;
         font-weight: 800;
@@ -727,8 +775,8 @@
             </div>
 
             <div class="hero-right">
-              <h1 class="hero-title">Heart <small>and</small> <span class="soul">Soul</span></h1>
-              <p class="tagline">(a Mental Health Workshop)</p>
+              <h1 class="hero-title">Heart <small>• Mind •</small> <span class="soul">Soul</span></h1>
+              <p class="tagline">“Love the Lord your God with all your heart, soul, and mind.”</p>
 
               <div class="tinted-panel">
                 <div class="mini-stat">
@@ -753,8 +801,8 @@
         <section class="slide slide--serene">
           <div class="slide-header">
             <div>
-              <div class="eyebrow">Workshop overview</div>
-              <h2 class="slide-title">Caring for Our Minds, Hearts, and Soul</h2>
+              <div class="eyebrow">Why tonight?</div>
+              <h2 class="slide-title">Caring for our hearts, minds, and souls</h2>
             </div>
           </div>
 
@@ -765,21 +813,82 @@
                   <div class="pulse-ring"></div>
                 </div>
               </div>
-              <div class="big-number" style="margin-top:18px;">1</div>
-              <div class="mini-title">Why this matters</div>
-              <p>Mental health affects everyone, including Christians. Many people struggle in silence because stigma, fear, and misconceptions make it hard to speak honestly.</p>
-              <div class="callout">This workshop creates a safe, Christ-centred space where people can learn, ask questions, and access practical support.</div>
+              <div class="quote-block" style="margin-top:18px;">“It’s not only about mental illness. It’s about what it means to be fully human.”</div>
+              <p style="margin-top:18px;">We are not only bodies to manage, or feelings to hide. We are people made of heart, mind, and soul—and each part matters.</p>
+              <div class="callout">Tonight is not about perfection. It is about honest care, compassionate support, and practical hope.</div>
             </div>
 
             <div class="info-card glass-box" style="position:relative; z-index:2;">
-              <div class="mini-title">Session goals</div>
-              <ul>
-                <li>Understand mental health from both biblical and practical perspectives.</li>
-                <li>Recognise signs of stress, anxiety, depression, grief, and burnout.</li>
-                <li>Learn practical coping strategies grounded in faith.</li>
-                <li>Know how to seek professional support and how to support others.</li>
-                <li>Reduce stigma and create more compassion in the church community.</li>
-              </ul>
+              <div class="mini-title">The three dimensions of us</div>
+              <div class="pillar-grid">
+                <div class="pillar-card">
+                  <div class="pillar-icon">❤</div>
+                  <div class="mini-title">Heart</div>
+                  <p>Where we feel, lament, grieve, and need tenderness.</p>
+                </div>
+                <div class="pillar-card">
+                  <div class="pillar-icon">🧠</div>
+                  <div class="mini-title">Mind</div>
+                  <p>Where we think, process, worry, and need truth and rest.</p>
+                </div>
+                <div class="pillar-card">
+                  <div class="pillar-icon">✦</div>
+                  <div class="mini-title">Soul</div>
+                  <p>Where we belong, rest, worship, and find identity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide slide--calm">
+          <div class="slide-header">
+            <div>
+              <div class="eyebrow">The connection</div>
+              <h2 class="slide-title">The heart, mind, and soul are not separate</h2>
+            </div>
+          </div>
+
+          <div class="content-grid">
+            <div class="glass-box" style="position:relative; z-index:2;">
+              <div class="quote-block">“Love the Lord your God with all your heart and with all your soul and with all your mind.” — Matthew 22:37</div>
+              <p style="margin-top:18px;">Our heart feels. Our mind thinks. Our soul belongs. But they are deeply connected. When one is wounded, the others feel it. When one is cared for, healing grows.</p>
+              <div class="callout">A person cannot be whole if only one part is cared for. We need healing that speaks to the whole person.</div>
+            </div>
+
+            <div class="glass-box" style="position:relative; z-index:2;">
+              <div class="pillar-grid">
+                <div class="pillar-card">
+                  <div class="pillar-icon">❤</div>
+                  <div class="mini-title">Feel</div>
+                  <ul>
+                    <li>Grief</li>
+                    <li>Joy</li>
+                    <li>Love</li>
+                    <li>Heartache</li>
+                  </ul>
+                </div>
+                <div class="pillar-card">
+                  <div class="pillar-icon">🧠</div>
+                  <div class="mini-title">Think</div>
+                  <ul>
+                    <li>Worry</li>
+                    <li>Fear</li>
+                    <li>Truth</li>
+                    <li>Rest</li>
+                  </ul>
+                </div>
+                <div class="pillar-card">
+                  <div class="pillar-icon">✦</div>
+                  <div class="mini-title">Belong</div>
+                  <ul>
+                    <li>Purpose</li>
+                    <li>Identity</li>
+                    <li>Peace</li>
+                    <li>Community</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </section>
